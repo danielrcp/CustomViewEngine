@@ -14,5 +14,9 @@ namespace CustomViewEngine.Controllers
             var VM = new ViewModels.Store();
             return View(VM);
         }
+        public ActionResult ShowError()
+        {
+            return View("Error");
+        }
     }
 }

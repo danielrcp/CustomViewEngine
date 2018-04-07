@@ -2,12 +2,32 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <style>
+        .DataGrid {
+            font-family: 'Segoe UI';
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .DataGrid td, .DataGrid th {
+                font-size: 11pt;
+                border: 1px solid yellowgreen;
+                padding: 3px 7px 2px 7px;
+            }
+            .DataGrid th {
+                font-size:12pt;
+            }
+            .DataGrid tr.Alt td {
+                color:black;
+                background-color:lightblue;
+            }
+    </style>
 </head>
 <body>
     <h1>Motor de vistas personalizado.</h1>
-    <DataGrid ItemsSource="{Binding Programas}"/>
-    <b/>
-    <DataGrid ItemsSource="{Binding IDs}"/>
+    <DataGrid ItemsSource="{Binding Programas}" />
+    <b />
+    <DataGrid ItemsSource="{Binding IDs}" />
 </body>
 </html>
